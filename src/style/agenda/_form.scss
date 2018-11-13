@@ -1,0 +1,56 @@
+&-form {
+  padding: 5% 10% 3%;
+
+  &_etiqueta_actualizacion {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+
+    .etiqueta {
+      color: $anaranjado-oscuro;
+      background-color: $anaranjado-claro;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: row;
+
+    .agenda-form {
+      &_inputs {
+        .common-input_text {
+          @media only screen and (max-width: $media-small) {
+            width: 150px;
+          }
+        }
+        .common-button {
+          &.add {
+            margin-left: 8px;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 1124px) {
+        display: flex;
+        flex-direction: column;
+
+        &_inputs {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+
+          .common-input_text {
+            width: 98%;
+            margin: 0 0 0 8px;
+          }
+          .common-button {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

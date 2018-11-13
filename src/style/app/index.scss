@@ -1,0 +1,72 @@
+.app {
+  align-self: center;
+  background-color: white;
+  border-left: 1px solid $gris;
+  border-right: 1px solid $gris;
+  height: 100vh;
+  width: 80%;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 250px;
+  .table {
+    margin-bottom: 0;
+    td,
+    th {
+      vertical-align: middle;
+    }
+    .mRight {
+      margin-right: 20px;
+    }
+  }
+}
+.credits {
+  text-align: center;
+  padding: 70px;
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
+  &:hover {
+    opacity: 1;
+  }
+  a {
+    color: #4b4668;
+  }
+}
+.message {
+  text-align: center;
+  &:only-child {
+    margin: 0;
+  }
+}
+.btn-sm {
+  margin-right: 8px;
+}
+.form-inline {
+  margin: 10px auto;
+  width: 235px;
+  .btn-default {
+    margin-left: 5px;
+  }
+}
+
+.panel {
+  .panel-heading {
+    cursor: pointer;
+  }
+  .panel-collapse {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+  .panel-body {
+    border: none !important;
+  }
+  h2 {
+    margin-top: 5px !important;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,13 @@
+body {
+  background-color: $gris-claro;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-roboto;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}

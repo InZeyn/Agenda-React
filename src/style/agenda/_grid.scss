@@ -1,0 +1,36 @@
+&-grid {
+  color: $azul-oscuro;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 5%;
+
+  &_columns,
+  &_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid $gris;
+    padding: 0 8px;
+  }
+
+  &_column,
+  &_row {
+    border-right: 1px solid opacify($gris, 0.5);
+  }
+
+  &_column {
+    color: $azul-claro;
+    font-weight: 600;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &_cell {
+    align-self: center;
+  }
+
+  .delimiter-right {
+    border-right: 1px solid $gris;
+  }
+}
